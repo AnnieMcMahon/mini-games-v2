@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+
+#rockpapergame {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Asap, 'sans-serif';
+  background-color: #24272E;
+}
+
+#rockpapergame header {
+  background-color: white;
+  padding-bottom: 0.2rem;
+}
+
+#rockpapergame h1 {
+  color: #24272E;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#rockpapergame .scoreboard {
+  border: 3px solid white;
+  width: 12rem;
+  margin: 1rem auto;
+  color: white;
+  font-size: 3rem;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+}
+
+#rockpapergame .badge {
+  background-color: #E25840;
+  color: white;
+  font-size: 1rem;
+  padding: 0.2rem 0.8rem;
+}
+
+#rockpapergame #user-label {
+  position: absolute;
+  top: 1.5rem;
+  left: -2rem;
+}
+
+#rockpapergame #bot-label {
+  position: absolute;
+  top: 1.5rem;
+  right: -2rem;
+}
+
+#rockpapergame .result {
+  font-size: 2rem;
+  color: white;
+}
+
+#rockpapergame .result p {
+  text-align: center;
+  font-weight: bold;
+}
+
+#rockpapergame .choices {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#rockpapergame .choice {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#rockpapergame img {
+  width: 120px;
+}
+
+#rockpapergame .choice:hover {
+  cursor: pointer;
+  border-style: double;
+}
+
+#rockpapergame #action-message {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#rockpapergame .reset {
+  text-align: center;
+  margin: 2rem;
+}
+
+#rockpapergame #reset-btn {
+  width: 5rem;
+  height: 2rem;
+  background-color: #E25840;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+#rockpapergame #reset-btn:hover {
+  background-color: rgb(133, 29, 29);
+  cursor: pointer;
+}
+
+#rockpapergame .green-glow {
+  border: 6px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+  border-radius: 50%;
+}
+
+#rockpapergame .red-glow {
+  border: 6px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+  border-radius: 50%;
+}
+
+#rockpapergame .yellow-glow {
+  border: 6px solid yellow;
+  box-shadow: 0 0 10px yellowgreen;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  #rockpapergame img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #rockpapergame img {
+    width: 75px;
+  }
+
+  #rockpapergame h1 {
+    font-size: 2rem;
+  }
+
+  #rockpapergame .result {
+    font-size: 1.6rem;
+  }
+}

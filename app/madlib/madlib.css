@@ -1,0 +1,113 @@
+#madlibgame h1 {
+  text-align: center;
+  margin: 1rem;
+  color: rgb(148, 9, 78);
+  font-size: 3rem;
+}
+
+#madlibgame h2 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+#madlibgame {
+  display: flexbox;
+  padding: 2rem;
+  background: linear-gradient(-45deg, #d3686b, #f1cee4); 
+  margin: auto;
+  border: 2px solid rgb(148, 9, 78);
+}
+
+#madlibgame form {
+  width: 20rem;
+  margin: 1rem auto;
+  }
+  
+  #madlibgame label, #madlibgame input {
+  font-size: 1.2rem;
+  display: block;
+  }
+  
+  #madlibgame input {
+  width: 20rem;
+  }
+
+#madlibgame p {
+  text-align: center;
+  font-size: 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20px auto;
+  max-width: 50rem;
+}
+
+#madlibgame .button-section {
+  margin: auto;
+  text-align: center;
+}
+
+#madlibgame .story-button {
+  padding: 0.5rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  margin: 0 0.5rem 2rem;
+}
+
+#madlibgame button {
+  position: relative;
+  background-color: rgb(209, 68, 124);
+  padding: 0.7rem;
+  text-align: center;
+  border-radius: 5%;
+  width: 15rem;
+  border: 2px solid rgb(205, 32, 101);
+  box-shadow: -5px 5px rgb(104, 11, 48);
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+#madlibgame .generate {
+  background-color: rgb(148, 9, 78);
+  border: 2px solid rgb(148, 9, 78);
+  box-shadow: -5px 5px rgb(109, 16, 16);
+}
+
+#madlibgame button:hover {
+  background-color: rgb(212, 124, 138);
+}
+
+/* Medium screens */
+@media screen and (max-width: 900px) and (min-width: 540px) {
+  #madlibgame button {
+    font-size: 1.2rem;
+    width: 12rem;
+  }
+}
+
+/* Surface Duo */
+@media screen and (max-width: 540px) and (min-width: 480px) {
+  #madlibgame button {
+    font-size: 0.8rem;
+    width: 8rem;
+  }
+
+  #madlibgame p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  #madlibgame input {
+    width: 15rem;
+    }
+
+  #madlibgame p {
+    font-size: 1.5rem;
+  }
+  
+  #madlibgame button {
+    margin: 0.5rem 0;
+  }
+}
