@@ -33,9 +33,9 @@ h1, h2 {
 }
 
 .nav li {
-  font-size: 1.3rem;
+  font-size: 1rem;
   background-color: rgb(91, 11, 91);
-  min-width: 14rem;
+  min-width: 10rem;
   flex: 1;
   text-align: center;
   margin: 0;
