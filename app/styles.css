@@ -16,7 +16,7 @@ h1, h2 {
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .site-title {
