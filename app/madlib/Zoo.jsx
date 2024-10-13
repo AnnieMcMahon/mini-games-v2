@@ -1,43 +1,7 @@
 'use client'
 
-import { useState, ChangeEvent } from "react";
-
-const animals = [
-  "ant",
-  "tiger",
-  "koala bear",
-  "salamander",
-  "shark",
-  "baby dinosaur",
-];
-
-const numbers = ["two", "four", "three", "ten", "six"];
-
-const colors = ["pink", "orange", "purple", "white", "green", "maroon"];
-
-const bodyParts = ["nose", "mouth", "leg", "paw", "tail", "neck"]
-
-const adjectives = [
-  "gross",
-  "awesome",
-  "joyful",
-  "sympathetic",
-  "arrogant",
-  "beautiful",
-  "chubby",
-];
-
-const actions = [
-  "running",
-  "playing",
-  "spinning around",
-  "sobbing",
-  "giggling",
-  "laughing"
-];
-
-const instructions =
-  "Choose words from the list or type your own, then click on Generate MadLib";
+import { useState } from "react";
+import {animals, numbers, colors, bodyParts, adjectives, actions, instructions} from './dictionary';
 
 export default function Zoo() {
   const [formData, setFormData] = useState({
@@ -152,7 +116,6 @@ export default function Zoo() {
 
   return (
     <>
-      <h2>Zoo Story</h2>
       <p>{instructions}</p>
       <form>
         <div>

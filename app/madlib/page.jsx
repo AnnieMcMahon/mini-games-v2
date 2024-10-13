@@ -7,24 +7,23 @@ import { useState } from "react";
 
 export default function MadLibGame() {
 
-  const [story, setStory] = useState("Sentence");
+  const [story, setStory] = useState("Witch");
 
-  const handleWitch = () => {
-    setStory("Witch")
-  };
+  const stories = ["Witch", "Zoo"];
 
-  const handleZoo = () => {
-    setStory("Zoo")
+  const storyButtons = stories.map(item => <button name={item} key={item} className={story==item ? "selected" : "unselected"} onClick={(e)=> handleClick(e)}>{item} Story</button>);
+ 
+  const handleClick = (e) => {
+    setStory(e.target.name);
   };
 
   return (
       <div id="madlibgame">
         <h1>Mad Lib</h1> 
         <div className="button-section">
-        <button className="story-button" onClick={handleWitch}>Witch</button>
-        <button className="story-button" onClick={handleZoo}>Zoo</button>
-      </div>  
-      {story == "Zoo" ? <Zoo /> : <Witch />}
+        {storyButtons}
+        </div>  
+        {story == "Zoo" ? <Zoo /> : <Witch />}
       </div>
   );
 };

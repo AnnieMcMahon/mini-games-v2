@@ -1,45 +1,7 @@
 'use client'
 
-import { useState, ChangeEvent } from "react";
-
-const actions = [
-  "running",
-  "playing",
-  "spinning around",
-  "sobbing",
-  "giggling",
-];
-const landForms = [
-  "mountain",
-  "valley",
-  "desert",
-  "hill",
-  "rain forest",
-  "gutters",
-];
-const adjectives = [
-  "gross",
-  "awesome",
-  "joyful",
-  "sympathetic",
-  "arrogant",
-  "beautiful",
-  "chubby",
-];
-const colors = ["pink", "orange", "purple", "white", "green", "maroon"];
-const verbs = ["giggle", "shiver", "hiccup", "yawn", "dash", "spin around"];
-const liquids = ["lime juice", "coolant", "oil", "blood", "milk", "beer"];
-const animals = [
-  "ant",
-  "tiger",
-  "koala bear",
-  "salamander",
-  "shark",
-  "baby dinosaur",
-];
-
-const instructions =
-  "Choose words from the list or type your own, then click on Generate MadLib";
+import { useState } from "react";
+import {actions, landForms, adjectives, colors, verbs, liquids, animals, instructions} from './dictionary';
 
 function Witch() {
   const [formData, setFormData] = useState({
@@ -180,10 +142,8 @@ function Witch() {
 
   return (
     <>
-      <h2>Witch Story</h2>
       <p>{instructions}</p>
       <form>
-        <div>
           <label htmlFor="action-choice">Action (-ing):</label>
           <input
             list="actions"
@@ -197,8 +157,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+        <br/>
           <label htmlFor="landForm-choice">Land Form:</label>
           <input
             list="landForms"
@@ -212,8 +171,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+          <br/>
           <label htmlFor="adjective-choice">Adjective:</label>
           <input
             list="adjectives"
@@ -227,8 +185,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+        <br/>
           <label htmlFor="color-choice">Color:</label>
           <input
             list="colors"
@@ -242,8 +199,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+        <br/>
           <label htmlFor="verb-choice">Verb (example: run):</label>
           <input
             list="verbs"
@@ -257,8 +213,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+        <br/>
           <label htmlFor="liquid-choice">Liquid:</label>
           <input
             list="liquids"
@@ -272,8 +227,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+        <br/>
           <label htmlFor="adjective2-choice">Adjective:</label>
           <input
             list="adjectives2"
@@ -287,8 +241,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+        <br/>
           <label htmlFor="color2-choice">Color:</label>
           <input
             list="colors2"
@@ -302,8 +255,7 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
-        <div>
+<br/>
           <label htmlFor="animal-choice">Animal:</label>
           <input
             list="animals"
@@ -317,7 +269,6 @@ function Witch() {
               <option value={word} key={word} />
             ))}
           </datalist>
-        </div>
       </form>
       <p>{paragraph}</p>
       <div className="button-section">

@@ -15,8 +15,6 @@
 
 #rockpapergame h1 {
   color: #24272E;
-  text-align: center;
-  font-size: 2.5rem;
 }
 
 #rockpapergame .scoreboard {
@@ -138,10 +136,6 @@
 @media only screen and (max-width: 520px) {
   #rockpapergame img {
     width: 75px;
-  }
-
-  #rockpapergame h1 {
-    font-size: 2rem;
   }
 
   #rockpapergame .result {
