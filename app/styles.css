@@ -28,7 +28,7 @@ h2 {
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@ h2 {
 }
 
 .nav li {
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: rgb(131, 16, 131);
   min-width: 10rem;
   flex: 1;
@@ -66,4 +66,27 @@ h2 {
 
 .nav li:hover {
   background-color: #9145ad;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 0.1rem;
+  }
+
+  .nav ul {
+    gap: 0.3rem;
+  }
+
+  .nav li {
+    min-width: 4rem;
+  }
+
+  .nav a {
+    padding: .1rem;
+    font-size: 0.5rem;
+  }
+
+  .site-title {
+    font-size: 0.5rem;
+  }
 }

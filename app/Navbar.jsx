@@ -9,7 +9,7 @@ export default function Navbar() {
           <a href="/tictactoe">Tic-Tac-Toe</a>
         </li>
         <li>
-          <a href="/madlib">Mad-Lib</a>
+          <a href="/madlib">Mad Lib</a>
         </li>
         <li>
           <a href="/magicEightBall">Magic Eight Ball</a>
