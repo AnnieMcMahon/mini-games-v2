@@ -1,10 +1,10 @@
-#tictactoe {
-  justify-content:space-between;
+#tictactoe {  
+  text-align: center;
   font-family: sans-serif;
   margin: 1rem auto;
   padding: 0 2rem;
   border: 2px solid rgb(20, 12, 161);
-  width: 30rem;
+  width: 20rem;
   height: 25rem;
 }
 
@@ -24,6 +24,11 @@
   width: 3rem;
 }
 
+#tictactoe .board {
+  margin: auto;
+  width: 9rem;
+}
+
 #tictactoe .board-row:after {
   clear: both;
   content: '';
@@ -33,21 +38,6 @@
 #tictactoe .status {
   margin-bottom: 1rem;
   font-size: 1.5rem;
-}
-
-#tictactoe .game {
-  display: flex;
-  flex-direction: row;
-}
-
-#tictactoe .game-info {
-  width: 12rem;
-}
-
-#tictactoe .history {
-  border: none;
-  font-size: 1rem;
-  
 }
 
 #tictactoe .reset {
@@ -62,15 +52,7 @@
     margin: 0.5rem;
     padding: 0;
     border: none;
-    width: auto;
+    width: 100%;
     height: auto;
-  }
-
- #tictactoe .status {
-    font-size: 1rem;
-  }
-
-  #tictactoe .reset {
-    font-size: 1rem;
   }
 }

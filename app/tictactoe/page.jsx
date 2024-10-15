@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import "./tictactoe.css";
 import { useState } from "react";
 import Board from "./Board";
@@ -16,41 +16,20 @@ export default function TicTacToeGame() {
     setCurrentMove(nextHistory.length - 1);
   }
 
-  function jumpTo(nextMove) {
-    setCurrentMove(nextMove);
-  }
-
   function resetGame() {
     setHistory([Array(9).fill(null)]);
     setCurrentMove(0);
   }
 
-  const moves = history.map((squares, move) => {
-    let description;
-    if (move > 0) {
-      description = "Go to move #" + move;
-    } else {
-      description = "Go to game start";
-    }
-    return (
-      <li key={move}>
-        <button className="history" onClick={() => jumpTo(move)}>{description}</button>
-      </li>
-    );
-  });
-
-  return ( 
+  return (
     <div id="tictactoe">
-    <h1>Tic-Tac-Toe</h1>
-    <div className="game">
+      <h1>Tic-Tac-Toe</h1>
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-        <button className="reset" onClick={resetGame}>Start Over</button>
+        <button className="reset" onClick={resetGame}>
+          Start Over
+        </button>
       </div>
-      <div className="game-info">
-        <ol>{moves}</ol>
-      </div>
-    </div>
     </div>
   );
 }
