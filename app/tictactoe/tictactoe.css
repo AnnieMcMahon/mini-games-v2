@@ -55,7 +55,14 @@
     width: 100%;
     height: auto;
   }
+  #tictactoe .square {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  
   #tictactoe .board {
-    width: 100%;
+    width: 6rem;
   }
 }
