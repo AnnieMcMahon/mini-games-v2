@@ -53,4 +53,8 @@
     width: 15rem;
     height: auto;
   }
+
+  #tictactoe .board {
+    height: 9rem;
+  }
 }
