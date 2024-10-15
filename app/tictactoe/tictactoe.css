@@ -47,9 +47,9 @@
 }
 
 /* Small screens */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
  #tictactoe {
-    margin: 0.5rem;
+    margin: auto;
     padding: 0;
     border: none;
     width: 100%;

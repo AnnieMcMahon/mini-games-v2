@@ -119,7 +119,7 @@
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   #rockpapergame img {
     width: 2rem;
   }
