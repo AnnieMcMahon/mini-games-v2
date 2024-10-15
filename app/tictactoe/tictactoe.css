@@ -2,9 +2,8 @@
   text-align: center;
   font-family: sans-serif;
   margin: 1rem auto;
-  padding: 0 2rem;
   border: 2px solid rgb(20, 12, 161);
-  width: 20rem;
+  width: 50%;
   height: 25rem;
 }
 
@@ -49,20 +48,8 @@
 /* Small screens */
 @media screen and (max-width: 768px) {
  #tictactoe {
-    margin: auto;
-    padding: 0;
     border: none;
     width: 100%;
     height: auto;
-  }
-  #tictactoe .square {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    height: 2rem;
-    width: 2rem;
-  }
-  
-  #tictactoe .board {
-    width: 6rem;
   }
 }
