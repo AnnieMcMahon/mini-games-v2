@@ -26,12 +26,12 @@
 #tictactoe .board {
   margin: auto;
   width: 9rem;
+  display: table;
 }
 
 #tictactoe .board-row:after {
   clear: both;
   content: '';
-  display: table;
 }
 
 #tictactoe .status {
