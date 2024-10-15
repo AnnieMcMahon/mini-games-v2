@@ -55,6 +55,6 @@
   }
 
   #tictactoe .board {
-    height: 9rem;
+    max-height: 9rem;
   }
 }
