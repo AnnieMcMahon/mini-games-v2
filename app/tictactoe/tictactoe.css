@@ -54,3 +54,10 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #tictactoe .board {
+    width: 100%;
+    height: auto;
+  }
+ }
