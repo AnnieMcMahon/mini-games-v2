@@ -27,7 +27,7 @@
   margin: auto;
   width: 9rem;
   height: 9rem;
-  display: block;
+  display: table;
 }
 
 #tictactoe .board-row:after {
@@ -54,10 +54,3 @@
     height: auto;
   }
 }
-
-@media screen and (max-width: 400px) {
-  #tictactoe .board {
-    width: 100%;
-    height: auto;
-  }
- }
