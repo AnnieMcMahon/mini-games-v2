@@ -27,7 +27,7 @@
   margin: auto;
   width: 9rem;
   height: 9rem;
-  display: table;
+  display: block;
 }
 
 #tictactoe .board-row:after {
